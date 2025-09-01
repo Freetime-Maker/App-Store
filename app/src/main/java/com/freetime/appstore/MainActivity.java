@@ -24,9 +24,9 @@ public class MainActivity extends Activity {
         Button installBtn = findViewById(R.id.installBtn);
         installBtn.setOnClickListener(v -> {
             // Example APK url; replace with dynamic url or file
-            Uri apkUri = Uri.parse("https://freetimemaker.github.io/");
+            Uri apkUri = Uri.parse("https://github.com/Freetime-Maker/App-Store-App-Downloader/blob/main/GeoWeather.apk");
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setDataAndType(apkUri, "application/vnd.android.package-archive");
+            intent.setDataAndType(apkUri, "application/com.freetime.geoweather");
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         });
